@@ -1,7 +1,10 @@
 //program to calculate nth number of fibonacci sequence using dynamic programming
+//This program uses memoization as it stores the value of a computation that might be required in the future
+
 #include<iostream>
 using namespace std;
 int lookup_array[10] = {0};
+
 
 int fibonacci(int n)
 {
