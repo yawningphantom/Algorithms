@@ -17,9 +17,9 @@ int fibonacci(int n)
 int main()
 {
   int n,d;
-  cout<<"Enter the number";
+  cout<<"Enter the number\n";
   cin>>n;
   d = fibonacci(n);
-  cout<<d;
+  cout<<"The "<<n<<"th number in fibonacci series is :-> "<<d;
   return 0;
 }
