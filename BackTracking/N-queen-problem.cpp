@@ -1,7 +1,6 @@
 //A simple program to solve the N-queen problem using BackTracking
 
 #include<iostream>
-
 using namespace std;
 
 bool isSafe(int board[][10], int i , int j , int n){
@@ -49,9 +48,9 @@ bool nQueenProblem(int board[][10] , int i , int n){
            // else{
            //  cout<<"_";
            // }
-           cout<<board[i][j]<<" ";
+           cout<<board[i][j]<<"\t";
        }
-       cout<<endl;
+       cout<<"\n";
      }
 
      return true;
@@ -79,16 +78,13 @@ bool nQueenProblem(int board[][10] , int i , int n){
 }
 
 int main(){
-  int n;
-  cout<<"Enter N";
-  cin>>n;
+
   int board[10][10] = {0};
-  if(nQueenProblem(board , 0 , n)){
+  if(nQueenProblem(board , 0 , 10)){
     cout<<"that's how the queen can be placed";
   }
   else{
     cout<<"queens cannot be placed";
-
   }
   return 0;
 }
